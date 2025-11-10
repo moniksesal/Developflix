@@ -3,16 +3,58 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.genero-container {
+/*.genero-container {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: #f8f8f8;
-}
+}*/
 
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
+/* Mis CSS */
+.container-general {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fffdce6a;
+  border-radius: 20px;
+}
 
+.genero {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contenedorTituloimg {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: flex-start;
+}
+
+.contenedorTituloimg:hover {
+  background-color: rgba(200, 255, 237, 0.437);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contenedorTituloimg h1 {
+  font-size: 20px;
+}
+
+.contenedorTituloimg img:hover {
+  transform: scale(1.1);
+}
+
+.genero-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2)
+}
