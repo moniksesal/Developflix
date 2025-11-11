@@ -31,9 +31,36 @@ for (let i = 0; i < peliculasThriller.length; i++) {
 
 const contenedorAventura = document.getElementById("genero-12");
 for (let i = 0; i < peliculasAventura.length; i++) {
-    let peliculaActual = peliculasAccion[i];
+    let peliculaActual = peliculasAventura[i];
     let titulo = peliculaActual.title;
     let poster = peliculaActual.poster_path;
     let URLimagen = "https://image.tmdb.org/t/p/w500" + poster;
     contenedorAventura.innerHTML += `<div class="contenedorTituloimg"><img src="${URLimagen}"></img><h1>${titulo}</h1></div>`
 }
+
+
+// CORRECCION DATA
+/*
+const accion = document.getElementById("genero-28")
+const thriller = document.getElementById("genero-53")
+const aventura = document.getElementById("genero-12")
+
+function pelisGenero (genero) {
+    const pelisFiltradas = peliculas.filter(peli => peli.genre_ids.includes(genero)) //objeto.propiedad.método
+    const mostrarPelis = pelisFiltradas.map(peli => {
+        const urlBase = "https://image.tmdb.org/t/p/w500"
+        const template = `
+        <div class="card">
+            <img src="${urlBase}${peli.poster_path}" alt=${peli.title} />
+            <h3>${peli.title}<h3>
+        </div>
+        `
+        return template
+    }).join("")
+    return mostrarPelis
+}
+
+accion.innerHTML = pelisGenero(28)
+thriller.innerHTML = pelisGenero(53)
+aventura.innerHTML = pelisGenero(12)
+*/
