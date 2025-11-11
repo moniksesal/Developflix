@@ -14,7 +14,7 @@ console.log(peliculasAventura)
 
 const contenedorAccion = document.getElementById("genero-28"); //hecho con forEach
     peliculasAccion.forEach((peliculaActual) =>  {
-    let titulo = peliculaActual.title;
+    let titulo = peliculaActual.title; // Data ha usado .map() 
     let poster = peliculaActual.poster_path;
     let URLimagen = "https://image.tmdb.org/t/p/w500" + poster;
     contenedorAccion.innerHTML += `<div class="contenedorTituloimg"><img src="${URLimagen}"></img><h1>${titulo}</h1></div>`;
